@@ -1,36 +1,22 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
-      <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
-    <% end %>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+</head>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <% if user_signed_in? %>
-          <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item dropdown">
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
+    <div class="navbar navbar-expand-sm navbar-light">
+      <div class="navbar-brand">
+        <%= image_tag "oliviaandtom.png", class: "flowers opacity: 50" %><br>
+          <h3 class="buttface">The countdown is on: <%= @difference %> days to go!</h3>
+          <%# <h1><strong>CREDITS TO GUY MURPHY!</strong></h1> %>
+          <% if user_signed_in? %>
+            <div class="info-options">
+              <%= link_to "HOME", user_registration_url, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
+              <%= link_to "LOGISTICS", logical_path, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
+              <%= link_to "THINGS TO DO", active_path, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
+              <%= link_to "REGISTRY", registry_path, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
+              <%= button_to "Log out", destroy_user_session_path, method: :delete, form: {  data: { turbo: :false } }, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
             </div>
-          </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
-        <% end %>
-      </ul>
+          <% end %>
+      </div>
     </div>
-  </div>
-</div>

@@ -1,0 +1,11 @@
+<h1>Editing blacklist</h1>
+
+<%= render "form", blacklist: @blacklist %>
+
+<br>
+
+<div>
+  <%# <%= link_to "Show this blacklist", @blacklist %>
+  <%= button_to "Destroy this blacklist", @blacklist, method: :delete %>
+  <%= link_to "Back to blacklists", blacklists_path %>
+</div>

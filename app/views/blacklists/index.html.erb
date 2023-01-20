@@ -1,0 +1,24 @@
+<p style="color: green"><%= notice %></p>
+  <div class="information-block">
+    <h1>Blacklists</h1>
+
+    <div id="blacklists">
+
+    <table>
+            <tr>
+              <th class="cookies">Name</th>
+              <th class="cookies"> </th>
+
+            </tr>
+            <% Blacklist.all.each do |form| %>
+              <tr>
+                <td class="cookies"><%= form.name %></td>
+                <td class="cookies"><%= link_to "Edit information", edit_blacklist_path(form) %></td>
+              </tr>
+            <% end %><br>
+          </table>
+    <%= render "form", blacklist: @blacklist %>
+  </div>
+</div>
+
+<%# <%= link_to "New blacklist", new_blacklist_path %>

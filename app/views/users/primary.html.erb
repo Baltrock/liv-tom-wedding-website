@@ -1,0 +1,77 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="invite">
+    <div class="asparagus">
+      <div class="awesome">
+        <%= link_to "RSVP", classified_path, class: "btn btn-pink text-white text-uppercase rounded-pill fw-bold size-larger" %>
+      </div>
+    </div><br>
+    <div class="bosham">
+    </div><br>
+
+
+    <%# <div class="row"> %>
+      <div class="timeline">
+
+        <h4 class="buttface1">THE BIG DAY</h4>
+
+        <div class="cooking">
+          <table>
+            <tr>
+              <th><h5 class="buttface5">Time</h5></th>
+              <th><h5 class="buttface5">Event</h5></th>
+            </tr>
+            <tr>
+              <td><h5 class="buttface2">3:00pm</td>
+              <td><h5 class="buttface2">Service starts - please arrive half an hour early to allow plenty of time to be seated</h5></td>
+            <tr>
+            <tr>
+              <td></td>
+              <td><div class="sun"><em>Holy Trinity Church, Bosham, PO18 8LY<em></div></td>
+            </tr>
+            <tr>
+              <td><h5 class="buttface2">4:00pm</h5></td>
+              <td><h5 class="buttface2">Travel to reception <br> </h5></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><div class="sun"><em>Furze Creek, Smugglers Lane, PO18 8QW</em></div></td>
+            </tr>
+            <tr>
+              <td><h5 class="buttface2">6:00pm</h5></td>
+              <td><h5 class="buttface2">Dinner & speeches</h5></td>
+            </tr>
+            <tr>
+              <td><h5 class="buttface2">9:00pm</h5></td>
+              <td><h5 class="buttface2">Dancing</h5></td>
+            </tr>
+            <tr>
+              <td><h5 class="buttface2">12:30pm</h5></td>
+              <td><h5 class="buttface2">Carriages</h5></td>
+            </tr>
+
+          </table>
+        </div><br>
+      </div><br>
+        <% wedding = Date.parse("2023-05-17") %>
+        <% today = Date.today %>
+        <% difference = (wedding - today).to_i %>
+      <%# <div id='map' class="where-go", style='height: 400px;'>MAP: <br></div>
+        <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoiYmFsdHJvY2siLCJhIjoiY2xjOTg5YjBlMDZ6MTNvcGNzaWNub283MSJ9.roNYTvUGCBzXfjiLQDLgiA';
+          const map = new mapboxgl.Map({
+          container: 'map', // container ID
+          // style: 'mapbox://styles/mapbox/streets-v12', // style URL
+          center: [-74.5, 40], // starting position [lng, lat]
+          zoom: 9, // starting zoom
+          });
+
+
+        </script> %>
+      <%# </div> %>
+  </div>
+</body>

@@ -76,3 +76,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "forest_liana", "~> 7.7"
+
+gem "pundit", "~> 2.3"

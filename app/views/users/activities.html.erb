@@ -1,0 +1,26 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="asparagus">
+      <div class="awesome">
+        <%= link_to "RSVP", classified_path, class: "btn btn-pink text-white text-uppercase rounded-pill fw-bold size-larger" %>
+      </div>
+    </div><br>
+
+  <div class="information-block">
+    <h2 class="buttface"><strong>Things to do:</strong></h2>
+    <h5 class="buttface">If you're staying for the weekend, here are a few things nearby we'd recommend:</h4><br>
+    <h4 class="buttfaceT"><strong>For drinking:</strong></h4>
+    <h5 class="buttface">The Anchor Bleu is a nice pub in Bosham, a stone's throw from the church.</h5><br>
+    <h4 class="buttfaceT"><strong>For a beach day:</strong></h4>
+    <h5 class="buttface">West Wittering Beach is a beautiful spot. Get there early though - to avoid car park queues.</h5><br>
+    <h4 class="buttfaceT"><strong>For some country air:</strong></h4>
+    <h5 class="buttface">There are loads of great walks in the area. For views, try the South Downs - Kingly Vale is one of our favourites. If you are in Bosham, you can take a ferry over to Itchenor and walk along the seashore towards West Wittering</h5><br>
+  </div>
+          <% wedding = Date.parse("2023-05-17") %>
+          <% today = Date.today %>
+          <% difference = (wedding - today).to_i %>
+</body>

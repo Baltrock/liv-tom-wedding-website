@@ -1,0 +1,42 @@
+<div class="happy-couple">
+
+  <h3>Welcome to your wedding website HQ!</h3>
+  <h5>Here, you can access all the information of your guests, their allegies, <br>
+  set the dress code, communicate with the guests and confirm their attendance.</h5><br><br>
+
+  <div class="eyes">
+  <h3>Confirmed Atendees! </h3>
+        <table>
+          <tr>
+            <th class="cookies col-3 col-sm-12">Name</th>
+            <th class="cookies col-3 col-sm-12">Dietry Req.</th>
+            <th class="cookies col-3 col-sm-12">Accomodation</th>
+
+          </tr>
+          <% Rsvp.all.each do |form| %>
+            <tr>
+              <td class="cookies col-3 col-sm-12"><%= form.name %></td>
+              <td class="cookies col-3 col-sm-12"><%= form.food_requests %></td>
+              <td class="cookies col-3 col-sm-12"><%= form.accomodation %></td>
+            </tr>
+          <% end %><br>
+        </table>
+  </div><br>
+
+  <div class="eyes">
+  <h3>NOT Atendding! </h3>
+        <table>
+          <tr>
+            <th class="cookies col-3 col-sm-12">Name</th>
+
+          </tr>
+          <% Blacklist.all.each do |form| %>
+            <tr>
+              <td class="cookies col-3 col-sm-12"><%= form.name %></td>
+            </tr>
+          <% end %><br>
+        </table>
+  </div><br>
+
+
+</div>

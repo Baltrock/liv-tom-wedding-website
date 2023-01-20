@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @blacklist %>
+
+<div>
+  <%= link_to "Edit this blacklist", edit_blacklist_path(@blacklist) %> |
+  <%= link_to "Back to blacklists", blacklists_path %>
+
+  <%= button_to "Destroy this blacklist", @blacklist, method: :delete %>
+</div>

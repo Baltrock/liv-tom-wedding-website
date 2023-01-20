@@ -1,0 +1,212 @@
+.munchies {
+  background-color: aqua;
+  height: 250px;
+  width: fill;
+}
+
+.timeline {
+  // border: 1px solid;
+  height: fit-content;
+  width: fill;
+  margin: auto 0;
+}
+
+.where-go {
+  // background-color: rgb(236, 128, 128);
+  width: fill;
+  border: 1px solid;
+}
+
+.big-ask {
+  background-color: bisque;
+  width: fill;
+  height: 250px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-content: center;
+  padding: 10px;
+  width: 1200px;
+  background-color: white;
+}
+
+.invite {
+  margin: 20px;
+  padding: 10px;
+  align-content: center;
+  width: fill;
+  justify-content: center;
+  align-self: center;
+  background-color: white;
+  margin-top: -20px;
+}
+
+.clap {
+  width: fit-content;
+  height: fit-content;
+}
+body {background: white!important;}
+
+.awesome {
+  border-radius: 10px;
+  border-color: black;
+  background-color: #8FBC8F;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  align-content: center;
+  font-size: 100px;
+}
+
+.awesome1 {
+  border-radius: 10px;
+  border-color: black;
+  background-color: #8FBC8F;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  align-content: center;
+  font-size: 100px;
+  margin: 10px;
+}
+
+.asparagus {
+  width: fill;
+  display: flex;
+  justify-content: center;
+}
+
+.info-table {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: fit-content;
+}
+
+table, td {
+  // border: 1px solid ;
+  justify-self: center;
+}
+
+td,
+th {
+    // border: 1px solid ;
+    padding: 10px;
+    width: fit-content;
+}
+
+.buttface {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.buttface1 {
+  font-family: 'Cormorant Garmond', serif;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.buttface2 {
+  font-family: 'Cormorant Garmond', serif;
+  text-align: left;
+}
+
+.buttface3 {
+  font-family: 'Cormorant Garmond', serif;
+  text-align: right;
+  font-weight: bolder;
+}
+.buttface4 {
+  font-family: 'Cormorant Garmond', serif;
+  text-align: center;
+}
+
+.buttface5 {
+  font-family: 'Cormorant Garmond', serif;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.buttfaceT {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bolder;
+}
+
+.bosham {
+  background-image: asset-url('new-cover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+  margin: auto 0;
+}
+
+
+.cooking {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.information-block {
+  margin: 50px;
+  padding: 20px;
+  margin-top: -10px;
+}
+
+.information-block-spec {
+  margin: 50px;
+  padding: 20px;
+  margin-top: -10px;
+}
+
+.information-block2 {
+  margin: 50px;
+  padding: 20px;
+  width: 600px;
+}
+
+.information-block3 {
+  margin: 50px;
+  margin-top: -40px;
+  display: flex;
+}
+
+.tbody {
+  justify-content: center;
+}
+
+.bigcard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.white {
+  color: white;
+}
+
+.cookies {
+  width: 200px;
+  padding-right: 10px;
+}
+
+.cookies1 {
+  width: 300px;
+  color: white;
+}
+
+.book {
+  display: flex;
+}
+
+.sun {
+  margin-top: -20px;
+}

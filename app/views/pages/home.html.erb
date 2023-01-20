@@ -1,2 +1,26 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="entity">
+
+
+    <div class="invite">
+      <div class="asparagus">
+        <div class="awesome">
+          <%= link_to "Access website", new_user_registration_path( status: { status:"user" }), class: "btn btn-pink text-white text-uppercase fw-bold", style: "color:black"%>
+        </div>
+      </div><br>
+      <div class="bosham"></div><br>
+    </div>
+
+
+    <div class="directions">
+      <div class="button">
+        <%= link_to "Admin", admin_session_path( status: { status:"admin" }), class: "btn btn-pink text-white text-uppercase fw-bold", style: "color:black" %>
+      </div>
+    </div>
+  </div>
+</body>
