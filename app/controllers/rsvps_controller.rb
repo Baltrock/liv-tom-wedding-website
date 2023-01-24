@@ -3,7 +3,7 @@ class RsvpsController < ApplicationController
 
   # GET /rsvps or /rsvps.json
   def index
-    @rsvps = Rsvp.where(user: current_user)
+    # @rsvps = Rsvp.where(user: current_user)
     wedding = Date.parse("2023-05-27")
     today = Date.today
     @difference = (wedding - today).to_i
