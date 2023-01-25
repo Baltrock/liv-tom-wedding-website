@@ -3,10 +3,8 @@
   text-decoration: solid;
   text-shadow: 10px;
   padding: 10px;
-  // background-color: aquamarine;
   text-align: center;
   width: fill;
-  // margin: 10px;
   background-color: white;
 }
 
@@ -23,8 +21,12 @@
 }
 
 .info-options {
+  // text-align: center;
+  justify-content: space-evenly;
   width: fill;
-
+  display: flex;
+  margin: 5px;
+  padding: 5px;
 }
 
 .flowers {
