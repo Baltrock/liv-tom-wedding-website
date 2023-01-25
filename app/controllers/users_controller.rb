@@ -29,19 +29,17 @@ class UsersController < ApplicationController
   end
 
   # GET /user/1 or /user/1.json
+
   def show
+    @rsvp.all
     @user = User.find(params[:id])
       respond_to do |format|
         format.html # show.html.erb
         format.json { render json: @user }
       end
-      info = JSON.parse(url_s)
-      @infos = info["value"]
+    info = JSON.parse(url_s)
+    @infos = info["value"]
     render json: @current_user
-  end
-
-  def show
-    @rsvp.all
   end
 
   def user
