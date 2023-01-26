@@ -222,8 +222,17 @@ th {
 
 .book {
   text-decoration: none;
-  color: black;
+  // color: black;
+  color: #000080;
   // font-weight: bold;
+  font-size: medium;
+  font-family: 'Cormorant Garmond', serif;
+}
+
+.book-line {
+  // color: #000080;
+  // color: green;
+  text-decoration: none;
   font-size: medium;
   font-family: 'Cormorant Garmond', serif;
 }
