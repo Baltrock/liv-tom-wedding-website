@@ -3,8 +3,8 @@
 <%= render @blacklist %>
 
 <div>
-  <%= link_to "Edit this blacklist", edit_blacklist_path(@blacklist) %> |
-  <%= link_to "Back to blacklists", blacklists_path %>
+  <%= link_to "Edit", edit_blacklist_path(@blacklist) %> |
+  <%= link_to "Back to list", blacklists_path %>
 
-  <%= button_to "Destroy this blacklist", @blacklist, method: :delete %>
+  <%= button_to "Remove Name", @blacklist, method: :delete %>
 </div>
