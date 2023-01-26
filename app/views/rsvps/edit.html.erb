@@ -1,10 +1,10 @@
-<h1>Editing rsvp</h1>
+<h1 class="buttface">Editing rsvp</h1>
 
 <%= render "form", rsvp: @rsvp %>
 
 <br>
 
 <div>
-  <%= button_to "Destroy this rsvp", @rsvp, method: :delete %>
-  <%= link_to "Back to rsvps", rsvps_path %>
+  <%= link_to "Delete rsvp", @rsvp, method: :delete, class: "book" %>
+  <%= link_to "Back to rsvps", rsvps_path, class: "book" %>
 </div>
