@@ -1,6 +1,10 @@
 <p style="color: green"><%= notice %></p>
 <div class="information-block">
-  <div id="rsvps">
+  <h4 class="buttface">Message from The Groom: <br>
+  <h5 class="buttface">‘We are thrilled you’re able to attend, we can’t wait to celebrate with you. Please could you fill out the below table for yourself and
+  anyone else on your invitation to detail names, dietary requirements/allergies, and details of your hotel or accommodation.
+  There could be a limited number of taxis, so we will try to help coordinate people travelling back to similar areas at the end of the night’</h4></h5>
+  <div id="rsvps" class="rice">
         <table>
           <tr>
             <th class="cookies"><div class="buttface">Name </div></th>
@@ -14,11 +18,11 @@
               <td class="cookies"><div class="buttface"><%= form.name %></div></td>
               <td class="cookies"><div class="buttface"><%= form.food_requests %></div></td>
               <td class="cookies"><div class="buttface"><%= form.accomodation %></div></td>
-              <td class="cookies"><div class="buttface"><%= link_to "Edit information", edit_rsvp_path(form) %></td>
+              <td class="cookies"><div class="buttface"><%= link_to "Edit", edit_rsvp_path(form) %></td>
             </tr>
           <% end %><br>
         </table>
-  </div><br>
+  </div>
 
 <%= render "form" %>
 </div>

@@ -23,7 +23,7 @@ class AdminController < ApplicationController
 
     respond_to do |format|
       if @admin.save
-        format.html { redirect_to admin_url(@ben), notice: "Ben was successfully created." }
+        format.html { redirect_to admin_url(@ben)}
         format.json { render :show, status: :created, location: @ben }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -36,7 +36,7 @@ class AdminController < ApplicationController
   def update
     respond_to do |format|
       if @ben.update(ben_params)
-        format.html { redirect_to admin_url(@admin), notice: "Ben was successfully updated." }
+        format.html { redirect_to admin_url(@admin) }
         format.json { render :show, status: :ok, location: @admin }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -50,7 +50,7 @@ class AdminController < ApplicationController
     @admin.destroy
 
     respond_to do |format|
-      format.html { redirect_to admin_url, notice: "admin was successfully destroyed." }
+      format.html { redirect_to admin_url }
       format.json { head :no_content }
     end
   end

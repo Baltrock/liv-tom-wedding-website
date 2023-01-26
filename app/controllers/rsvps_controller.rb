@@ -51,7 +51,7 @@ class RsvpsController < ApplicationController
   def update
     respond_to do |format|
       if @rsvp.update(rsvp_params)
-        format.html { redirect_to rsvp_url(@rsvp), notice: "Rsvp was successfully updated." }
+        format.html { redirect_to rsvp_url(@rsvp) }
         format.json { render :show, status: :ok, location: @rsvp }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -65,7 +65,7 @@ class RsvpsController < ApplicationController
     @rsvp.destroy
 
     respond_to do |format|
-      format.html { redirect_to rsvps_url, notice: "Rsvp was successfully destroyed." }
+      format.html { redirect_to rsvps_url }
       format.json { head :no_content }
     end
   end

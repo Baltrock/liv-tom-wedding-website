@@ -1,10 +1,12 @@
 <p style="color: green"><%= notice %></p>
   <div class="information-block">
-    <h1>Blacklists</h1>
+    <h4 class="buttface">This is not a blacklist and The Groom has a message: </h4><br>
+    <h5 class="buttface">‘Thank you for letting us know, we are sorry you’re not able to join us.
+    Please could you fill in the table below with your name and anyone else from your invitation who is not able to join.’</h5>
 
     <div id="blacklists">
 
-    <table>
+    <table class="buttface">
             <tr>
               <th class="cookies">Name</th>
               <th class="cookies"> </th>
@@ -13,7 +15,7 @@
             <% Blacklist.all.each do |form| %>
               <tr>
                 <td class="cookies"><%= form.name %></td>
-                <td class="cookies"><%= link_to "Edit information", edit_blacklist_path(form) %></td>
+                <td class="cookies"><%= link_to "Edit", edit_blacklist_path(form) %></td>
               </tr>
             <% end %><br>
           </table>
