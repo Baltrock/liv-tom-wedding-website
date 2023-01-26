@@ -11,10 +11,17 @@
           <%# <h1><strong>CREDITS TO GUY MURPHY!</strong></h1> %>
           <% if user_signed_in? %>
             <div class="info-options">
-              <%= link_to "HOME", user_registration_url, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
-              <%= link_to "LOGISTICS", logical_path, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
-              <%= link_to "THINGS TO DO", active_path, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
-              <%= link_to "REGISTRY", registry_path, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
+              <div class="saphire">
+                <%= link_to "HOME", user_registration_url, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
+              </div>
+                <%= link_to "LOGISTICS", logical_path, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
+              </div>
+              <div class="saphire">
+                <%= link_to "THINGS TO DO", active_path, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
+              </div>
+              <div class="saphire">
+                <%= link_to "REGISTRY", registry_path, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
+              </div>
             </div>
             <div class="info-options">
               <%= button_to "Log out", destroy_user_session_path, method: :delete, form: {  data: { turbo: :false } }, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
