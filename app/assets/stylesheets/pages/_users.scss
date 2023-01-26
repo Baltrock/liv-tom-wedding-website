@@ -34,7 +34,6 @@
 }
 
 .invite {
-  margin: 20px;
   padding: 10px;
   align-content: center;
   width: fill;
@@ -154,7 +153,7 @@ th {
 
 .cooking {
   margin: 10px;
-  padding: 10px;
+  // padding: 10px;
   display: flex;
   justify-content: center;
 }
@@ -224,6 +223,7 @@ th {
 .book {
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  // font-weight: bold;
   font-size: medium;
+  font-family: 'Cormorant Garmond', serif;
 }
