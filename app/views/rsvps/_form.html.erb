@@ -2,7 +2,7 @@
 <%= simple_form_for(@rsvp) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-
+  <% if @rsvps.count == 0 %>
   <div class="form-inputs">
     <div class="book">
       <div class="cookies"><%= f.input :name, label: false, placeholder: 'name' %></div>
@@ -10,6 +10,14 @@
       <div class="cookies"><%= f.input :accomodation, label: false, placeholder: 'accomodation' %></div>
     </div>
   </div>
+  <% else %>
+  <div class="book">
+      <div class="cookies"><%= f.input :name, label: false %></div>
+      <div class="cookies"><%= f.input :food_requests, label: false %></div>
+      <div class="cookies"><%= f.input :accomodation, label: false %></div>
+    </div>
+  </div>
+  <% end %>
   <div class="form-actions">
     <%# <%= f.button :submit %>
     <%= f.button :submit, "submit", class: "buttface" %>

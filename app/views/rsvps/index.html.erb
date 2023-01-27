@@ -3,14 +3,17 @@
   <h5 class="buttface">We are thrilled you’re able to attend, we can’t wait to celebrate with you. Please could you fill out the below table for yourself and
   anyone else on your invitation to detail names, dietary requirements/allergies, and details of your hotel or accommodation.
   There could be a limited number of taxis, so we will try to help coordinate people travelling back to similar areas at the end of the night.</h4></h5>
+
   <div id="rsvps" class="rice">
         <table>
           <tr>
+          <% if @rsvps.count == 0 %>
+          <% else %>
             <th class="cookies"><div class="buttface">Name </div></th>
             <th class="cookies"><div class="buttface">Dietry Req.</div></th>
             <th class="cookies"><div class="buttface">Accomodation</div></th>
             <th class="cookies"> </th>
-
+          <% end %>
           </tr>
           <% @rsvps.each do |form| %>
             <tr>
@@ -22,6 +25,7 @@
           <% end %><br>
         </table>
   </div>
+
 
 <%= render "form" %>
 </div>

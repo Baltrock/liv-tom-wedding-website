@@ -17,6 +17,7 @@ class RsvpsController < ApplicationController
     today = Date.today
     @difference = (wedding - today).to_i
     @rsvps = Rsvp.where(user: current_user)
+    Rsvp.where(user: current_user)
   end
 
   # GET /rsvps/new
@@ -32,6 +33,8 @@ class RsvpsController < ApplicationController
     wedding = Date.parse("2023-05-27")
     today = Date.today
     @difference = (wedding - today).to_i
+    Rsvp.where(user: current_user)
+    @rsvps = Rsvp.where(user: current_user)
   end
 
   # POST /rsvps or /rsvps.json
@@ -51,7 +54,7 @@ class RsvpsController < ApplicationController
   def update
     respond_to do |format|
       if @rsvp.update(rsvp_params)
-        format.html { redirect_to rsvp_url(@rsvp) }
+        format.html { redirect_to rsvps_path(@rsvp) }
         format.json { render :show, status: :ok, location: @rsvp }
       else
         format.html { render :edit, status: :unprocessable_entity }
