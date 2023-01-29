@@ -5,9 +5,9 @@
   <% if @rsvps.count == 0 %>
   <div class="form-inputs">
     <div class="book">
-      <div class="cookies"><%= f.input :name, label: false, placeholder: 'name' %></div>
-      <div class="cookies"><%= f.input :food_requests, label: false, placeholder: 'food requests' %></div>
-      <div class="cookies"><%= f.input :accomodation, label: false, placeholder: 'accomodation' %></div>
+      <div class="cookies"><%= f.input :name, label: false, placeholder: 'Name', required: true %></div>
+      <div class="cookies"><%= f.input :food_requests, label: false, placeholder: 'Dietary Req.', required: true %></div>
+      <div class="cookies"><%= f.input :accomodation, label: false, placeholder: 'Accomodation', required: true %></div>
     </div>
   </div>
   <% else %>
@@ -19,7 +19,8 @@
   </div>
   <% end %>
   <div class="form-actions">
-    <%# <%= f.button :submit %>
-    <%= f.button :submit, "submit", class: "buttface" %>
+    <div class="awesome">
+      <%= f.button :submit, "submit", class: "btn btn-pink text-white text-uppercase rounded-pill fw-bold size-larger" %>
+    </div>
   </div>
 <% end %>
