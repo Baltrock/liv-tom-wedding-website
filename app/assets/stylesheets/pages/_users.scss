@@ -124,7 +124,12 @@ th {
 .buttface2 {
   font-family: 'Cormorant Garmond', serif;
   text-align: left;
-  height: 40px;
+}
+
+.buttface-top {
+  font-family: 'Cormorant Garmond', serif;
+  text-align: left;
+  height: 45px;
 }
 
 .buttface3 {
@@ -232,7 +237,7 @@ th {
 
 .sun {
   // margin-top: -20px;
-  height: 40px;
+  height: fit-content;
 }
 
 .saphire {
