@@ -102,7 +102,16 @@ th {
     width: fit-content;
 }
 
+.high-up {
+  padding-top: -20px;
+  margin: 0px;
+}
+
 .buttface {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.buttface-rock {
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -115,6 +124,7 @@ th {
 .buttface2 {
   font-family: 'Cormorant Garmond', serif;
   text-align: left;
+  height: 40px;
 }
 
 .buttface3 {
@@ -138,6 +148,10 @@ th {
   font-weight: bolder;
 }
 
+.buttface-tip {
+  font-family: 'Cormorant Garamond', serif;
+}
+
 .bosham {
   background-image: asset-url('new-cover.png');
   background-repeat: no-repeat;
@@ -155,7 +169,6 @@ th {
   // margin: 10px;
   // padding: 10px;
   display: flex;
-  justify-content: center;
 }
 
 .information-block {
@@ -202,6 +215,12 @@ th {
   padding-right: 10px;
 }
 
+.good-cookies {
+  width: 200px;
+  padding-right: 10px;
+  font-size: small;
+}
+
 .cookies1 {
   width: 300px;
   color: white;
@@ -213,6 +232,7 @@ th {
 
 .sun {
   margin-top: -20px;
+  height: 40px;
 }
 
 .saphire {
@@ -235,4 +255,8 @@ th {
   text-decoration: none;
   font-size: medium;
   font-family: 'Cormorant Garmond', serif;
+}
+
+.smaller {
+  font-size: small;
 }
