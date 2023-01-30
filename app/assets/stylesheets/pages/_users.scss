@@ -107,54 +107,30 @@ th {
   margin: 0px;
 }
 
-.buttface {
+.surf {
   font-family: 'Cormorant Garamond', serif;
+  height: fit-content;
 }
 
-.buttface-rock {
+.surf-rock {
   font-family: 'Cormorant Garamond', serif;
+  vertical-align: text-top;
 }
 
-.buttface1 {
-  font-family: 'Cormorant Garmond', serif;
-  text-align: center;
-  font-weight: bolder;
-}
-
-.buttface2 {
-  font-family: 'Cormorant Garmond', serif;
-  text-align: left;
-}
-
-.buttface-top {
-  font-family: 'Cormorant Garmond', serif;
-  text-align: left;
-  height: 45px;
-}
-
-.buttface3 {
-  font-family: 'Cormorant Garmond', serif;
-  text-align: right;
-  font-weight: bolder;
-}
-.buttface4 {
-  font-family: 'Cormorant Garmond', serif;
+.surf1 {
+  font-family: 'Cormorant Garamond', serif;
   text-align: center;
 }
 
-.buttface5 {
+.surf-top {
   font-family: 'Cormorant Garmond', serif;
   text-align: left;
-  font-weight: bolder;
+  height: 40px;
 }
 
-.buttfaceT {
+.surfT {
   font-family: 'Cormorant Garamond', serif;
   font-weight: bolder;
-}
-
-.buttface-tip {
-  font-family: 'Cormorant Garamond', serif;
 }
 
 .bosham {
@@ -263,5 +239,6 @@ th {
 }
 
 .smaller {
-  font-size: small;
+  // font-size: xx-small;
+  font-family: 'Cormorant Garamond', serif;
 }

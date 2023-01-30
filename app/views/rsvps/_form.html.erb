@@ -5,16 +5,16 @@
   <% if @rsvps.count == 0 %>
   <div class="form-inputs">
     <div class="book">
-      <div class="cookies"><%= f.input :name, label: false, placeholder: 'Name', class: "smaller" %></div>
-      <div class="cookies"><%= f.input :food_requests, label: false, placeholder: 'Dietary Req.', class: "smaller" %></div>
-      <div class="cookies"><%= f.input :accomodation, label: false, placeholder: 'Accomodation' , class: "smaller"%></div>
+      <div class="cookies col-sm-12"><div class="smaller"><%= f.input :name, label: false, placeholder: 'Name' %></div></div>
+      <div class="cookies col-sm-12"><div class="smaller"><%= f.input :food_requests, label: false, placeholder: 'Dietary Req.', class: "smaller" %></div></div>
+      <div class="cookies col-sm-12"><div class="smaller"><%= f.input :accomodation, label: false, placeholder: 'Accomodation' , class: "smaller"%></div></div>
     </div>
   </div>
   <% else %>
   <div class="book">
-      <div class="cookies"><%= f.input :name, label: false %></div>
-      <div class="cookies"><%= f.input :food_requests, label: false %></div>
-      <div class="cookies"><%= f.input :accomodation, label: false %></div>
+      <div class="cookies"><div class="smaller"><%= f.input :name, label: false %></div></div>
+      <div class="cookies"><div class="smaller"><%= f.input :food_requests, label: false %></div></div>
+      <div class="cookies"><div class="smaller"><%= f.input :accomodation, label: false %></div></div>
     </div>
   </div>
   <% end %>
