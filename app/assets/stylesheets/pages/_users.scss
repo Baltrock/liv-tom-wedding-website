@@ -100,11 +100,10 @@ td,
 th {
     // border: 1px solid ;
     // padding: 10px;
-    width: 200px;
+    // width: 200px;
     height: fit-content;
     padding-left: 10px;
     padding-right: 10px;
-
 }
 
 .high-up {
@@ -181,6 +180,10 @@ th {
 .information-block2 {
   padding: 20px;
   width: fit-content;
+}
+
+.stray {
+  width: 200px;
 }
 
 .container {
