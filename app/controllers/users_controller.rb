@@ -32,6 +32,7 @@ class UsersController < ApplicationController
 
   def show
     @rsvp.all
+    @blacklist.all
     @user = User.find(params[:id])
       respond_to do |format|
         format.html # show.html.erb

@@ -3,7 +3,7 @@ class BlacklistsController < ApplicationController
 
   # GET /blacklists or /blacklists.json
   def index
-    @blacklists = Blacklist.all
+    @blacklists = Blacklist.where(user: current_user)
     wedding = Date.parse("2023-05-27")
     today = Date.today
     @difference = (wedding - today).to_i
@@ -25,18 +25,16 @@ class BlacklistsController < ApplicationController
   end
 
   # POST /blacklists or /blacklists.json
+
   def create
     @blacklist = Blacklist.new(blacklist_params)
     @blacklist.user = current_user
 
-    respond_to do |format|
-      if @blacklist.save
-        format.html { redirect_to blacklist_url(@blacklist)}
-        format.json { render :show, status: :created, location: @blacklist }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @blacklist.errors, status: :unprocessable_entity }
-      end
+    blacklist = current_user.blacklists.new(blacklist_params)
+    if @blacklist.save
+      redirect_to blacklists_path
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 
