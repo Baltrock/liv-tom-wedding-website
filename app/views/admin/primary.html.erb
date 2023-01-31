@@ -2,7 +2,7 @@
 
   <h3>Welcome to your wedding website HQ!</h3>
   <h5>Here, you can access all the information of your guests, their allegies, <br>
-  set the dress code, communicate with the guests and confirm their attendance.</h5><br><br>
+  set the dress code, communicate with the guests and confirm their attendance.</h5><br><%= button_to "Log out", destroy_admin_session_path, method: :delete, form: {  data: { turbo: :false } }, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %><br>
 
   <div class="eyes">
   <h3>Confirmed Atendees! </h3>

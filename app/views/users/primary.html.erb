@@ -11,7 +11,7 @@
       </div>
     </div><br>
     <div class="bosham">
-    </div><br>
+    </div><br><%= button_to "Log out", destroy_user_session_path, method: :delete, form: {  data: { turbo: :false } }, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
 
     <%# <div class="row"> %>
       <div class="timeline">
