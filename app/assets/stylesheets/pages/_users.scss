@@ -112,6 +112,11 @@ th {
   height: fit-content;
 }
 
+.surface {
+  width: fit-content;
+  margin: 10px;
+}
+
 .surf-rock {
   font-family: 'Cormorant Garamond', serif;
   vertical-align: text-top;
@@ -169,15 +174,14 @@ th {
 }
 
 .information-block2 {
-  margin: 50px;
   padding: 20px;
-  width: 600px;
+  width: fit-content;
 }
 
-.information-block3 {
+.container {
   margin: 50px;
   margin-top: -40px;
-  display: flex;
+  // display: flex;
 }
 
 .tbody {
@@ -253,4 +257,16 @@ th {
 
 ::placeholder {
   font-size: 10px;
+}
+
+@media(max-width: 992px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,56 +1,57 @@
-<div class="information-block3">
-  <div class="information-block2">
-    <h2 class="surf">Sign up</h2>
-    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
-      <%= f.error_notification %>
+<div class="container">
+  <div class="row">
+    <div class="information-block2 col-lg-6 col-12">
+      <h2 class="surf">Sign up</h2>
+      <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
+        <%= f.error_notification %>
 
-      <div class="form-inputs">
-        <div class="surf">
-          <%= f.input :email,
-                      # required: true,
-                      autofocus: true,
-                      input_html: { autocomplete: "email" }%>
-          <%= f.input :password,
-                      # required: true,
-                      hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                      input_html: { autocomplete: "new-password" } %>
-          <%= f.input :password_confirmation,
-                      # required: true,
-                      input_html: { autocomplete: "new-password" } %>
+        <div class="form-inputs">
+          <div class="surface">
+            <%= f.input :email,
+                        required: true,
+                        autofocus: true,
+                        input_html: { autocomplete: "email" }%>
+            <%= f.input :password,
+                        required: true,
+                        hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                        input_html: { autocomplete: "new-password" } %>
+            <%= f.input :password_confirmation,
+                        required: true,
+                        input_html: { autocomplete: "new-password" } %>
+          </div>
         </div>
-      </div>
-      <div class="form-actions">
-        <div class="awesome">
-          <%= f.button :submit, "Sign up", class: "btn btn-pink text-white text-uppercase fw-bold" %>
+        <div class="form-actions">
+          <div class="awesome">
+            <%= f.button :submit, "Sign up", class: "btn btn-pink text-white text-uppercase fw-bold" %>
+          </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
 
-  </div>
+    </div>
 
-  <div class="information-block2">
-    <h2 class="surf">Log in</h2>
+    <div class="information-block2 col-lg-6 col-12">
+      <h2 class="surf">Log in</h2>
 
-    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
-      <div class="form-inputs">
-        <div class="surf">
-          <%= f.input :email,
-                      required: false,
-                      autofocus: true,
-                      input_html: { autocomplete: "email" } %>
-          <%= f.input :password,
-                      required: false,
-                      input_html: { autocomplete: "current-password" } %>
-          <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
+        <div class="form-inputs">
+          <div class="surface">
+            <%= f.input :email,
+                        required: false,
+                        autofocus: true,
+                        input_html: { autocomplete: "email" } %>
+            <%= f.input :password,
+                        required: false,
+                        input_html: { autocomplete: "current-password" } %>
+            <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+          </div>
         </div>
-      </div>
 
-      <div class="form-actions">
-        <div class="awesome">
-          <%= f.button :submit, "Log in", class: "btn btn-pink text-white text-uppercase fw-bold" %>
+        <div class="form-actions">
+          <div class="awesome">
+            <%= f.button :submit, "Log in", class: "btn btn-pink text-white text-uppercase fw-bold" %>
+          </div>
         </div>
-      </div>
-    <% end %>
-
+      <% end %>
+    </div>
   </div>
 </div>
