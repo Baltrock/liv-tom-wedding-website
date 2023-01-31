@@ -5,26 +5,16 @@
 
   <div id="rsvps" class="rice">
         <table>
-          <tr>
-          <% if @rsvps.count == 0 %>
-          <% else %>
-            <%# <th class="cookies"><div class="surf">Name </div></th> %>
-            <%# <th class="cookies"><div class="surf">Dietry Req.</div></th> %>
-            <%# <th class="cookies"><div class="surf">Accomodation</div></th> %>
-            <%# <th class="cookies"> </th> %>
-          <% end %>
-          </tr>
           <% @rsvps.each do |form| %>
             <tr>
-              <td class="cookies"><div class="surf"><%= form.name %></div></td>
-              <td class="cookies"><div class="surf"><%= form.food_requests %></div></td>
-              <td class="cookies"><div class="surf"><%= form.accomodation %></div></td>
-              <td class="cookies"><div class="surf"><%= link_to "Edit", edit_rsvp_path(form) %></td>
+              <td class="stray"><div class="surf"><%= form.name %></div></td>
+              <td class="stray"><div class="surf"><%= form.food_requests %></div></td>
+              <td class="stray"><div class="surf"><%= form.accomodation %></div></td>
+              <%# <td class="bad-cookies"><div class="surf"><%= link_to "Edit", edit_rsvp_path(form) %>
             </tr>
           <% end %><br>
         </table>
   </div>
 
-
-<%= render "form" %>
+<%= render "form" %><br>
 </div>

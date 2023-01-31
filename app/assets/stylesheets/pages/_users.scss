@@ -60,6 +60,7 @@ body {background: white!important;}
   align-content: center;
   font-size: 100px;
   margin-top: 10px;
+  margin: 10px;
 }
 
 .awesome1 {
@@ -98,8 +99,12 @@ table, td {
 td,
 th {
     // border: 1px solid ;
-    padding: 10px;
-    width: fit-content;
+    // padding: 10px;
+    width: 200px;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 
 .high-up {
