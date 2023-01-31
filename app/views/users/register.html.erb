@@ -1,0 +1,19 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="asparagus">
+      <div class="awesome">
+        <%= link_to "RSVP", classified_path, class: "btn btn-pink text-white text-uppercase rounded-pill fw-bold size-larger" %>
+      </div>
+    </div><br>
+          <% wedding = Date.parse("2023-05-17") %>
+          <% today = Date.today %>
+          <% difference = (wedding - today).to_i %>
+  <div class="information-block">
+    <h2 class="surf"><strong>Registry:</strong></h2>
+    <h5 class="surf">If you would like to get us a gift, and wanted some inspiration, we have created an online registry of things we love which can be found at [link]. Obviously there is absolutely no pressure to buy us a gift - the most important thing to us is celebrating the day with you. </h5><br>
+  </div>
+</body>
