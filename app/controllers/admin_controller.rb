@@ -19,7 +19,9 @@ class AdminController < ApplicationController
 
   # POST /users or /users.json
   def create
-    @admin = Admin.new(admin_params)
+    @Admin = Admin.create(user_params)
+    session[:admin_id] = admin.id
+    render json:admin, status: :created
 
     respond_to do |format|
       if @admin.save
