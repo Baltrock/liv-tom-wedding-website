@@ -1,9 +1,9 @@
 class AdminController < ApplicationController
   # before_action :find_user
 
-  def find_user
-    @admin = Admin.find_by(params[:id])
-  end
+  # def find_user
+  #   @admin = Admin.find_by(params[:id])
+  # end
 
   # GET /information_forms or /information_forms.json
   def primary
@@ -19,17 +19,16 @@ class AdminController < ApplicationController
 
   # POST /users or /users.json
   def create
-    @Admin = Admin.create(user_params)
-    session[:admin_id] = admin.id
-    render json:admin, status: :created
+    # admin = Admin.create(user_params)
+    @admin = Admin.new(admin_params)
 
     respond_to do |format|
       if @admin.save
-        format.html { redirect_to admin_url(@ben)}
-        format.json { render :show, status: :created, location: @ben }
+        format.html { redirect_to admin_url(@admin)}
+        format.json { render :show, status: :created, location: @admin }
       else
         format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @ben.errors, status: :unprocessable_entity }
+        format.json { render json: @admin.errors, status: :unprocessable_entity }
       end
     end
   end

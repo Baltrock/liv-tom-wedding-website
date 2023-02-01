@@ -13,4 +13,15 @@ class PagesController < ApplicationController
     @difference = (wedding - today).to_i
   end
 
+  def your_order #before_filter
+    if user.password.present?
+     authenticate using valid_password? method of devise
+   else
+     redirect_to primary_url(@primary_path)
+   end
+  end
+
+  def set_password
+  end
+
 end
