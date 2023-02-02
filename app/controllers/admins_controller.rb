@@ -17,6 +17,10 @@ class AdminsController < ApplicationController
   def edit
   end
 
+  def new
+    @admin = Admin.new
+  end
+
   # POST /users or /users.json
   def create
     # admin = Admin.create(user_params)

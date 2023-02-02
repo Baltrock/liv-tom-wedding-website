@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get "about", to: "pages#about", as: :about
   # get 'admin' => 'admin#primary', as: :admin_root
   get 'users' => 'users#primary', as: :user_root
-  get 'admins' => 'admin#primary', as: :admin_root
+  get 'admins' => 'admins#primary', as: :admin_root
   get '/rsvp', to: 'rsvps#index', as: :answer
   get 'logistics' => 'users#logistics', as: :logical
   get 'activities' => 'users#activities', as: :active

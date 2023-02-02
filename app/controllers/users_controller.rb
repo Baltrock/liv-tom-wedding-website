@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_information_form, only: %i[ show edit update destroy ]
+  before_action :set_information_form, only: %i[ create show edit update destroy ]
 
   # GET /information_forms or /information_forms.json
   def primary

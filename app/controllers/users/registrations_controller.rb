@@ -3,14 +3,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   before_action :configure_account_update_params, only: [:update]
   protected
 
-
-  def create
-  end
   def after_sign_in_path(resource)
     if resource.is_admin
-      :admin_root
+      :admins_root
     elsif resource.is_admin == false
-      :users_path
+      :users_root
     else
       super
     end
