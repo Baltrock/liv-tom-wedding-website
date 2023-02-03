@@ -1,42 +1,44 @@
 <div class="happy-couple">
+  <div class="information-block">
 
-  <h3>Welcome to your wedding website HQ!</h3>
-  <h5>Here, you can access all the information of your guests, their allegies, <br>
-  set the dress code, communicate with the guests and confirm their attendance.</h5><br><%= button_to "Log out", destroy_admin_session_path, method: :delete, form: {  data: { turbo: :false } }, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %><br>
+    <h3 class="surf">Welcome to your wedding website HQ!</h3>
+    <h5 class="surf">Here, you can access all the information of your guests, their allegies, <br>
+    set the dress code, communicate with the guests and confirm their attendance.</h5><br><%= button_to "Log out", destroy_admin_session_path, method: :delete, form: {  data: { turbo: :false } }, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %><br>
 
-  <div class="eyes">
-  <h3>Confirmed Atendees! </h3>
-        <table>
-          <tr>
-            <th class="cookies col-3 col-sm-12">Name</th>
-            <th class="cookies col-3 col-sm-12">Dietry Req.</th>
-            <th class="cookies col-3 col-sm-12">Accomodation</th>
-
-          </tr>
-          <% Rsvp.all.each do |form| %>
+    <div class="eyes">
+    <h3 class="surf">Confirmed Atendees! </h3>
+          <table>
             <tr>
-              <td class="cookies col-3 col-sm-12"><%= form.name %></td>
-              <td class="cookies col-3 col-sm-12"><%= form.food_requests %></td>
-              <td class="cookies col-3 col-sm-12"><%= form.accomodation %></td>
+              <th class="surfT">NAME</th>
+              <th class="surfT">DIETARY REQ</th>
+              <th class="surfT">ACCOMODATION</th>
+
             </tr>
-          <% end %><br>
-        </table>
-  </div><br>
+            <% Rsvp.all.each do |form| %>
+              <tr>
+                <td class="cookies col-3 col-sm-12"><div class="surf"><%= form.name %></div></td>
+                <td class="cookies col-3 col-sm-12"><div class="surf"><%= form.food_requests %></div></td>
+                <td class="cookies col-3 col-sm-12"><div class="surf"><%= form.accomodation %></div></td>
+              </tr>
+            <% end %><br>
+          </table>
+    </div><br>
 
-  <div class="eyes">
-  <h3>NOT Atendding! </h3>
-        <table>
-          <tr>
-            <th class="cookies col-3 col-sm-12">Name</th>
-
-          </tr>
-          <% Blacklist.all.each do |form| %>
+    <div class="eyes">
+    <h3>NOT Atendding! </h3>
+          <table>
             <tr>
-              <td class="cookies col-3 col-sm-12"><%= form.name %></td>
+              <th class="cookies col-3 col-sm-12">Name</th>
+
             </tr>
-          <% end %><br>
-        </table>
-  </div><br>
+            <% Blacklist.all.each do |form| %>
+              <tr>
+                <td class="cookies col-3 col-sm-12"><%= form.name %></td>
+              </tr>
+            <% end %><br>
+          </table>
+    </div><br>
 
 
+  </div>
 </div>
