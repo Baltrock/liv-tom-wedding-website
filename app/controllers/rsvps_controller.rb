@@ -54,7 +54,7 @@ class RsvpsController < ApplicationController
   def update
     respond_to do |format|
       if @rsvp.update(rsvp_params)
-        format.html { redirect_to rsvp_url(@rsvp) }
+        format.html { redirect_to rsvps_path(@rsvp) }
         format.json { render :index, status: :ok, location: @rsvp_path }
       else
         format.html { render :edit, status: :unprocessable_entity }

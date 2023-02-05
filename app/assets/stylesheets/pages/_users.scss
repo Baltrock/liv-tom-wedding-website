@@ -268,7 +268,7 @@ th {
 }
 
 ::placeholder {
-  font-size: 8px;
+  font-size: 11px;
 }
 
 @media(max-width: 992px) {
@@ -281,4 +281,8 @@ th {
   .row {
     grid-template-columns: 1fr;
   }
+}
+
+.gattle {
+  text-decoration: none;
 }

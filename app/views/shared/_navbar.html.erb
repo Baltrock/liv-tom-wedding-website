@@ -27,9 +27,7 @@
                 <%= link_to "REGISTRY", registry_path, class: "book" %>
               </div>
             </div>
-            <%# <div class="info-options"> %>
-              <%# <%= button_to "Log out", destroy_user_session_path, method: :delete, form: {  data: { turbo: :false } }, class: "btn btn-pink text-grey text-uppercase rounded-pill fw-bold" %>
-            <%# </div> %>
+          <% elsif admin_signed_in? %>
           <% end %>
       </div>
     </div>

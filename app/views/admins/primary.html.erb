@@ -22,18 +22,17 @@
               </tr>
             <% end %><br>
           </table>
-    </div><br>
+    </div><br><br>
 
     <div class="eyes">
-    <h3>NOT Atendding! </h3>
+    <h3 class="surf">NOT Atendding! </h3>
           <table>
             <tr>
-              <th class="cookies col-3 col-sm-12">Name</th>
-
+              <th class="cookies col-3 col-sm-12"><div class="surfT">Name</div></th>
             </tr>
             <% Blacklist.all.each do |form| %>
               <tr>
-                <td class="cookies col-3 col-sm-12"><%= form.name %></td>
+                <td class="cookies col-3 col-sm-12"><div class="surf"><%= form.name %></div></td>
               </tr>
             <% end %><br>
           </table>
