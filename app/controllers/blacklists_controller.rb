@@ -42,8 +42,8 @@ class BlacklistsController < ApplicationController
   def update
     respond_to do |format|
       if @blacklist.update(blacklist_params)
-        format.html { redirect_to blacklist_url(@blacklist) }
-        format.json { render :show, status: :ok, location: @blacklist }
+        format.html { redirect_to blacklists_path(@blacklist) }
+        format.json { render :index, status: :ok, location: @blacklist_path }
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @blacklist.errors, status: :unprocessable_entity }
