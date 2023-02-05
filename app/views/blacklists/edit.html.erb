@@ -1,6 +1,6 @@
 <div class="information-block">
 
-  <h1>Edit Name</h1>
+  <h1 class="surf">Edit Name</h1>
 
   <%= render "form", blacklist: @blacklist %>
 
@@ -8,7 +8,7 @@
 
   <div>
     <%# <%= link_to "Show this blacklist", @blacklist %>
-    <%= button_to "Remove Name", @blacklist, method: :delete, class: "gattle" %>
-    <%= link_to "Back to list", blacklists_path %>
+    <div class="surf"><%= button_to "Remove Name", @blacklist, method: :delete, class: "gattle" %></div>
+    <div class="surf"><%= link_to "Back to list", blacklists_path %></div>
   </div>
 </div>
