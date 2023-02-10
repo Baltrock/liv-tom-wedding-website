@@ -4,12 +4,12 @@ class Admins::RegistrationsController < Devise::RegistrationsController
 
   protected
 
-  def create
-  end
+  # def create
+  # end
 
   def after_sign_in_path_for(resource)
     if resource.admin
-      :admin_root
+      :admins_root
     elsif resource.admin == false
       :users_root
     else
