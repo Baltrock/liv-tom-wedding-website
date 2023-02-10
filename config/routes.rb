@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   resources :blacklists
   resources :rsvps
   mount ForestLiana::Engine => '/forest'
-  devise_for :admins, controllers: {registrations: "admins/registrations"}
   devise_for :users, controllers: {registrations: "users/registrations"}
   root to: "pages#home"
   delete "/logout", to: "sessions#destroy"
@@ -11,7 +10,7 @@ Rails.application.routes.draw do
   get "about", to: "pages#about", as: :about
   # get 'admin' => 'admin#primary', as: :admin_root
   get 'users' => 'users#primary', as: :user_root
-  get 'admins' => 'admins#primary', as: :admin_root
+  # get 'admins' => 'admins#primary', as: :admin_root
   get '/rsvp', to: 'rsvps#index', as: :answer
   get 'logistics' => 'users#logistics', as: :logical
   get 'activities' => 'users#activities', as: :active

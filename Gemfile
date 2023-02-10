@@ -77,6 +77,6 @@ group :test do
   gem "webdrivers"
 end
 
-gem "forest_liana", "~> 7.7"
-
 gem "pundit", "~> 2.3"
+
+gem "forest_liana", "~> 7.8"
