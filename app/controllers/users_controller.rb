@@ -27,6 +27,12 @@ class UsersController < ApplicationController
     today = Date.today
     @difference = (wedding - today).to_i
   end
+  def classification
+    @user = User.all
+    wedding = Date.parse("2023-05-27")
+    today = Date.today
+    @difference = (wedding - today).to_i
+  end
 
   # GET /user/1 or /user/1.json
 
